@@ -1,0 +1,2 @@
+class Zukan < ApplicationRecord
+end

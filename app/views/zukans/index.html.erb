@@ -1,0 +1,21 @@
+<h1>ポケモン図鑑一覧</h1>
+<div>
+  <table class="teble table-striped table-bordered">
+    <thead>
+      <tr>
+        <th></th>
+        <th>No</th>
+        <th>ポケモン</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @pokemons.each do |p| %>
+        <tr>
+          <td><button class="btn btn-primary">詳細</button></td>
+          <td><%= p.id %></td>
+          <td><%= p.name %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
